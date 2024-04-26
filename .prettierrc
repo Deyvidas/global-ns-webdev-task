@@ -1,0 +1,29 @@
+{
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 79,
+    "tabWidth": 4,
+    "semi": false,
+    "arrowParens": "avoid",
+
+    "overrides": [
+        {
+            "files": "*.svelte",
+            "options": {
+                "parser": "svelte"
+            }
+        }
+    ],
+
+    "plugins": [
+        "prettier-plugin-svelte",
+        "@trivago/prettier-plugin-sort-imports"
+    ],
+
+    "importOrderSeparation": true,
+    "importOrder": ["<THIRD_PARTY_MODULES>", "^components"],
+
+    "svelteBracketNewLine": false,
+    "svelteIndentScriptAndStyle": true
+}

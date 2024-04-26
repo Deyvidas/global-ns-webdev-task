@@ -1,0 +1,18 @@
+html {
+    font-family: $font-main;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+
+    scroll-behavior: smooth;
+
+    * {
+        line-height: $line-height;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-color: $page-bg;
+    color: $text-color;
+}
