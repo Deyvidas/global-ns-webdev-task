@@ -1,0 +1,14 @@
+{
+  "requests": [
+    {
+      "id": "e0f23a30-7183-479e-bc1b-e0d263d4664c",
+      "email": "test1@hot.com",
+      "phone": "+78889997755"
+    },
+    {
+      "id": "99b939f0-5c85-4016-8b14-e17b5bd8b409",
+      "email": "deyvidas01@mail.ru",
+      "phone": "+79997233157"
+    }
+  ]
+}

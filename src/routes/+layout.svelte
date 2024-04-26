@@ -1,31 +1,33 @@
 <script type="ts">
+    import { page } from '$app/stores'
+
     import Container from 'components/Container.svelte'
     import '../app.scss'
+    import Link from 'components/Link.svelte'
+
+    $: url = $page.url.pathname
 </script>
 
-<Container>
+<Container class="container">
     <header class="header">
-        <span>[header]</span>
-        <a href="/">homepage</a>
-        <a href="/about">about</a>
-        <a href="/settings">settings</a>
+        <Link href="/">Главная</Link>
+        <Link href="/send-request">Оставить заявку</Link>
     </header>
 </Container>
 
-<Container>
+<Container class="container">
     <slot></slot>
 </Container>
 
-<Container>
-    <footer class="footer">
-        <span>[footer]</span>
-        <a href="/">homepage</a>
-        <a href="/about">about</a>
-        <a href="/settings">settings</a>
-    </footer>
-</Container>
-
 <style lang="scss">
+    a {
+        color: green;
+        &.active {
+            text-decoration: underline;
+            color: orangered;
+        }
+    }
+
     .header,
     .footer {
         display: flex;

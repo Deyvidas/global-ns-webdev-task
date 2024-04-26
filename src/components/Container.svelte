@@ -1,9 +1,15 @@
 <script lang="ts">
-    let cls: 'container' | 'container-right' | 'container-left' = 'container'
+    import type { HTMLBaseAttributes } from 'svelte/elements'
+
+    type TClass = 'container' | 'container-right' | 'container-left'
+    type $$Props = HTMLBaseAttributes & {
+        class: TClass
+    }
+    let cls: $$Props['class']
     export { cls as class }
 </script>
 
-<div class={cls}>
+<div class={cls} {...$$restProps}>
     <slot></slot>
 </div>
 

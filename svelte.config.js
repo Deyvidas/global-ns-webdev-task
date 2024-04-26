@@ -16,7 +16,8 @@ export default {
         adapter: adapter(),
 
         alias: {
-            'components/*': 'src/components/*'
+            'components/*': 'src/components/*',
+            'database/*': 'src/database/*'
         }
     },
 
